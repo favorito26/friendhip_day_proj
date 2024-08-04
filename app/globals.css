@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes fly-away {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.fly-away {
+  animation: fly-away 2s ease-out forwards;
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 1s ease-out forwards;
+}
